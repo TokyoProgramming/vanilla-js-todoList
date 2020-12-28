@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo Vanilla javascript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-body">
+        <h1 class="card-title">My TodoList</h1>
+
+        <div class="body__todo">
+          <div class="todo">
+            <div class="todo__body">
+              <form class="todo__input__form">
+                <input
+                  class="todo__input"
+                  placeholder="  Set  your  todo . . . . ."
+                />
+                <button type="submit" id="todo-button">submit</button>
+              </form>
+            </div>
+            <div class="todo-ul">
+              <ul class="todoList" id="todo-ul">
+                <!-- <li class="todoList-card check">
+                  <span>text</span>
+                  <i class="fas fa-check" id="check"></i>
+                  <i class="fas fa-trash" id="delete"></i>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

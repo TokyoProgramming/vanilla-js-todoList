@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #1656c2;
+  justify-content: center;
+  color: white;
+
+  flex: 1;
+  box-shadow: 10px 10px #1757c3 inset;
+}
+.card-body {
+  flex: 0.7;
+  min-height: 100vh;
+
+  background-color: #1a62ce;
+  box-shadow: 5px 5px 5px 5px #154dac;
+  border-radius: 20px;
+}
+.card-title {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.body__todo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  /*flex: 1;*/
+}
+
+.todo {
+  flex: 0.8;
+  justify-content: center;
+  margin: 10px 10px;
+}
+
+.todo__body {
+  display: flex;
+  border: none !important;
+  border-radius: 999px;
+  padding: 10px;
+  flex: 0.8;
+  background-color: #437cd6;
+}
+.todo__input__form {
+  display: flex;
+}
+.todo__body > form > input {
+  border: none !important;
+  background-color: #437cd6;
+}
+.todo__input {
+  display: flex;
+  flex: 1;
+  color: white;
+  padding: 10px;
+
+  font-size: medium;
+}
+.todo__input__form > input:focus {
+  outline-width: 0;
+}
+
+.todo__input__form > input::placeholder {
+  color: white;
+}
+/* .todo__input__form > .MuiSvgIcon-root {
+  margin-right: 5px;
+  padding: 5px;
+} */
+.todo__body > form > button {
+  display: none;
+}
+
+/* .todo-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.todoList {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-ul li {
+  list-style-type: none;
+}
+
+.todoList-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 100px;
+  background-color: whitesmoke;
+  color: #1c6edc;
+  cursor: pointer;
+}
+
+.todoList-card > span:hover {
+  font-size: 20px;
+}
+
+.todoList-card.check {
+  opacity: 0.5;
+}
+
+.todoList-card.check > span {
+  text-decoration-line: line-through;
+}
+
+.fa-check {
+  cursor: pointer;
+  position: absolute;
+  top: auto;
+  right: 10px;
+  color: #1c6edc;
+}
+
+.fa-trash {
+  cursor: pointer;
+  position: absolute;
+  top: auto;
+  right: 35px;
+  color: #1c6edc;
+}
+
+.fa-check:hover {
+  font-size: 20px;
+}
+.fa-trash:hover {
+  font-size: 20px;
+}
+
+.todoList li a:hover {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.doneTodo {
+  text-decoration-line: line-through;
+}
