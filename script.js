@@ -4,28 +4,6 @@ const todoUL = document.getElementById('todo-ul');
 const todoClass = document.querySelector('.todoList');
 const todoBtn = document.getElementById('todo-button');
 
-console.log('test');
-const todoData = [
-  {
-    id: 1,
-    todo: 'wash car',
-  },
-  {
-    id: 2,
-    todo: 'use laundry',
-  },
-  {
-    id: 3,
-    todo: 'finish paper work',
-  },
-];
-
-// data.forEach((e) => {
-//   console.log(e.todo);
-// });
-
-// console.log(data);
-
 const addTodo = (e) => {
   e.preventDefault();
   const todoValue = todoInput.value;
@@ -33,10 +11,6 @@ const addTodo = (e) => {
 
   const todoClass = document.createElement('li');
   todoClass.classList.add('todoList-card');
-
-  // const checkIcon = document.createElement('i');
-  // checkIcon.classList.add('fas.fa-trash');
-  // todoLI.appendChild(checkIcon);
 
   todoClass.innerHTML = `
   <span>${todoValue}</span> 
@@ -46,26 +20,6 @@ const addTodo = (e) => {
   todoUL.appendChild(todoClass);
   todoInput.value = '';
 };
-
-// const showTodo = (data) => {
-//   data.forEach((e) => {
-//     const todoClass = document.createElement('li');
-//     todoClass.classList.add('todoList-card');
-
-//     // const checkIcon = document.createElement('i');
-//     // checkIcon.classList.add('fas.fa-trash');
-//     // todoLI.appendChild(checkIcon);
-
-//     todoClass.innerHTML = `
-// 	<span>${e.todo}</span>
-// 	<i class="fas fa-check" id="check"></i>
-// 	<i class="fas fa-trash" id="delete"></i>`;
-
-//     todoUL.appendChild(todoClass);
-//   });
-// };
-
-// showTodo(todoData);
 
 const checkTodo = (e) => {
   console.log(e.target.classList);
@@ -78,7 +32,7 @@ const checkTodo = (e) => {
   //   Check TODO
   if (`${checkItem}` === 'fa-check') {
     const item = e.target.parentElement;
-    item.classList.add('check');
+    item.classList.toggle('check');
     // Delete Todo
   } else if (`${deleteItem}` === 'fa-trash') {
     const item = e.target.parentElement;

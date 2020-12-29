@@ -127,6 +127,7 @@ body {
 
 .todoList-card.check {
   opacity: 0.5;
+  transition: opacity 1s linear;
 }
 
 .todoList-card.check > span {
