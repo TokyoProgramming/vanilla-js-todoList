@@ -18,7 +18,7 @@ body {
   background-color: #1656c2;
   justify-content: center;
   color: white;
-
+  position: relative;
   flex: 1;
   box-shadow: 10px 10px #1757c3 inset;
 }
@@ -87,12 +87,6 @@ body {
   display: none;
 }
 
-/* .todo-ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .todoList {
   margin-top: 10px;
   display: flex;
@@ -146,8 +140,20 @@ body {
   cursor: pointer;
   position: absolute;
   top: auto;
-  right: 35px;
+  right: 30px;
   color: #1c6edc;
+}
+
+.fa-edit {
+  cursor: pointer;
+  position: absolute;
+  top: auto;
+  right: 45px;
+  color: #1c6edc;
+}
+
+.fa-edit:hover {
+  font-size: 20px;
 }
 
 .fa-check:hover {
@@ -164,4 +170,69 @@ body {
 
 .doneTodo {
   text-decoration-line: line-through;
+}
+
+.modal {
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  top: auto;
+  left: auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-card {
+  height: 80%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 70px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-form {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.modal-form > input {
+  border-radius: 50px;
+  border: none;
+  padding: 10px;
+}
+
+.modal-form > input:focus {
+  outline-width: 0;
+}
+
+.modal-btn {
+  display: none;
+}
+
+.show-modal {
+  z-index: 2;
 }

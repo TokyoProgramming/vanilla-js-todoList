@@ -1,0 +1,34 @@
+const todoData = [
+	{
+	  id: 1,
+	  todo: 'wash car',
+	},
+	{
+	  id: 2,
+	  todo: 'use laundry',
+	},
+	{
+	  id: 3,
+	  todo: 'finish paper work',
+	},
+  ];
+  
+  // const sample = [
+//   { id: 828, todo: '1', isCompleted: false },
+//   { id: 724, todo: '2', isCompleted: false },
+//   { id: 802, todo: '3', isCompleted: false },
+//   { id: 348, todo: '4', isCompleted: false },
+//   { id: 935, todo: '5', isCompleted: false },
+// ];
+
+// sample.forEach((e) => {
+//   if (e.id === 828) {
+//     e.isCompleted === true;
+
+//     e.todo = '8';
+//     e.id = 1;
+//     e.isCompleted = true;
+//     console.log(e.todo);
+//     console.log(sample);
+//   }
+// });
